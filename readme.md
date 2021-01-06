@@ -4,7 +4,7 @@ Build with **redis** using <a href="https://github.com/gomodule/redigo">redigo</
 <br>
 Data is just an up-to-date lorem from <a href="https://www.ufc.com/rankings">ufc website</a>
 
-<table>
+<table>API
 <tr>
 <th>Method</th>
 <th>Path</th>
@@ -19,13 +19,13 @@ Data is just an up-to-date lorem from <a href="https://www.ufc.com/rankings">ufc
 <td>
 POST
 </td>
-<td><b>/win</b>></td>
+<td><b>/win</b></td>
 <td>Add win to a specific fighter (accordint to id in request body)</td>
 </tr>
 
 <tr>
 <td>GET</td>
-<td>/top</td>
+<td><b>/top</b></td>
 <td>List of top 3 according to wins</td>
 </tr>
 </table>

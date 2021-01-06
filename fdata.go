@@ -3,13 +3,13 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/gomodule/redigo/redis"
 	"io/ioutil"
 	"log"
 	"os"
 )
 
-func ImportData(conn redis.Conn, filename string) {
+func ImportData(filename string) {
+	conn := pool.Get()
 	jsonFile, err := os.Open(filename)
 	if err != nil {
 		log.Fatal(err)
