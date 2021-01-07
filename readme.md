@@ -19,13 +19,13 @@ Data is just an up-to-date lorem from <a href="https://www.ufc.com/rankings">ufc
 <td>
 POST
 </td>
-<td><b>/win</b></td>
+<td><b>/win || /lose</b></td>
 <td>Add win to a specific fighter (accordint to id in request body)</td>
 </tr>
 
 <tr>
-<td>GET</td>
-<td><b>/top</b></td>
-<td>List of top 3 according to wins</td>
+<td>POST</td>
+<td><b>/lose</b></td>
+<td>Add lose to a specific fighter (accordint to id in request body)</td>
 </tr>
 </table>

@@ -40,3 +40,37 @@ func FindFighter(id string) (*Fighter, error) {
 	}
 	return &fighter, nil
 }
+
+func FighterWins(id string) error {
+	conn := pool.Get()
+	defer conn.Close()
+
+	exists, err := redis.Int(conn.Do("EXISTS", "fighter:"+id))
+	if err != nil {
+		return err
+	} else if exists == 0 {
+		return ErrNoFighter
+	}
+	_, err = conn.Do("HINCRBY", "fighter:"+id, "W", 1)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func FighterLose(id string) error {
+	conn := pool.Get()
+	defer conn.Close()
+
+	exists, err := redis.Int(conn.Do("EXISTS", "fighter:"+id))
+	if err != nil {
+		return err
+	} else if exists == 0 {
+		return ErrNoFighter
+	}
+	_, err = conn.Do("HINCRBY", "fighter:"+id, "L", 1)
+	if err != nil {
+		return err
+	}
+	return nil
+}
