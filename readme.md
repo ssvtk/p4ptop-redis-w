@@ -34,3 +34,10 @@ POST
 >> curl -i -L -d "id=3" localhost:8080/lose
 > <br>
 > curl -i -L -d "id=3" localhost:8080/win
+
+>-d, --data <data> Send specified data in POST request. Details provided below.<br>
+-i, --include Include HTTP headers in the output.<br>
+-L, --location Follow redirects.<br>
+
+
+PS: Uncomment "ImportData()" function to fill the DB with json data. 
