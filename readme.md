@@ -29,3 +29,8 @@ POST
 <td>Add lose to a specific fighter (accordint to id in request body)</td>
 </tr>
 </table>
+
+>EXAMPLE OF USE:
+>> curl -i -L -d "id=3" localhost:8080/lose
+> <br>
+> curl -i -L -d "id=3" localhost:8080/win
