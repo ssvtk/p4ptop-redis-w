@@ -32,7 +32,7 @@ POST
 
 >EXAMPLE OF USE:
 >> curl -i -L -d "id=3" localhost:8080/lose
-> <br>
+<br>
 >> curl -i -L -d "id=3" localhost:8080/win
 
 >-d, --data <data> Send specified data in POST request. Details provided below.<br>
