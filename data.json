@@ -1,0 +1,13 @@
+{"fighters": [
+  {"name": "Khabib Nurmagomedov", "W":28, "L":0,"division":"Lightweight"},
+  {"name":"Jon Jones","W":26,"L":1, "division":"Light Heavyweight"},
+  {"name":"Israel Adesanya","W":19, "L": 0, "division":"Middleweight"},
+  {"name":"Stipe Miocic", "W": 20, "L": 3, "division":"Heavyweight"},
+  {"name":"Kamaru Usman", "W":17, "L":1, "division":"Welterweight"},
+  {"name":"Alexander Volkanovski", "W": 22, "L": 1, "division":"Featherweight"},
+  {"name":"Dustin Porier", "W": 26, "L":6,"division":"Lightweight"},
+  {"name":"Max Holloway","W":21 ,"L":6,"division":"Featherweight"},
+  {"name":"Deiveson Figueiredo","W":20, "L": 1,"division":"Flyweight"},
+  {"name":"Petr Yan","W":15, "L":1, "division":"Bantamweight"}]
+
+}
